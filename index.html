@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>Registration Page Inputs</h1>
+            <label for="firstname">first name</label>
+            <input id="firstname"  required type="text" placeholder="write your first name">
+            <span class="first">must be less than 10 chars</span>
+            <label for="lastname">last name</label>
+            <input id="lastname" required type="text" placeholder="write your last name">
+            <span class="last">must be less than 10 chars</span> 
+            <label for="useremail">email</label>
+            <input id="useremail" required type="email" placeholder="write your email">
+            <span class="user">xxxxx(x < 10)@xxxx(x < 10).(com|org|net)</span>
+            <label for="password">password</label>
+            <input type="text"  required id="password" placeholder="write your password">
+            <span class="password">must be less than 8 chars with uppercase char, lower case chars, symbols, numbers</span>
+            <label for="confirmpassword ">confirm password</label>
+            <input type="password" required name="confirm password" id="confirmpassword" placeholder="must match the input password">
+            <span class="confirm">must match the input password</span>
+            <label for="phonenumber">phone number</label>
+            <input type="tel" required  id="phonenumber" placeholder="01xx xxx xxxx">
+            <span class="tel">01xx xxx xxxx</span>
+            <label for="image">image png or jbg</label>
+            <input type="file" required name="" id="image">
+            <span class="image">file only jpg or png image extension</span>
+            <button id="submit">submit</button>        
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
